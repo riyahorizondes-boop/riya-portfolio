@@ -3,9 +3,7 @@
 =========================== */
 
 .navbar{
-
     position: fixed;
-
     top: 0;
     left: 0;
 
@@ -17,42 +15,22 @@
 
     padding: 28px 48px;
 
-    z-index: 1000;
-
+    z-index: 9999;
 }
-
-
-/* ===========================
-   LOGO
-=========================== */
 
 .logo{
-
-    position:absolute;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-
-/* ===========================
-   BUTTONS
-=========================== */
 
 .nav-buttons{
+    position: absolute;
+    right: 48px;
 
-    position:absolute;
-
-    right:48px;
-
-    display:flex;
-
-    gap:12px;
-
+    display: flex;
+    gap: 12px;
 }
-
 
 /* Resume */
 
