@@ -4,6 +4,8 @@
 
 #hero{
 
+    position:relative;
+    
     display:flex;
 
     justify-content:center;
@@ -26,6 +28,21 @@
 
     object-fit: contain;
     
+    filter:none !important;
+
+    opacity:1 !important;
+    
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:transparent;
+
+    pointer-events:none;
 
 }
 
@@ -50,7 +67,7 @@
     width: 660px;
 
     top: -150px;
-    left: -120px;;
+    left: -140px;;
 
     opacity:0;
 
