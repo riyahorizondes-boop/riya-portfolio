@@ -422,11 +422,25 @@
 
 }
 
+    .polaroid-wrapper{
+
+        top:-100px;
+        left:-140px;
+
+    }
+
+    .polaroid{
+
+        width:400px;
+
+    }
+
+}
+
 .mobile-resume.show{
 
     opacity:1;
 
     transform:translate(-50%, 0);
 
-}
 }
