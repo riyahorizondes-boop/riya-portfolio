@@ -32,10 +32,17 @@
 
     /* ---------- HERO ASSETS ---------- */
 
-    .polaroid{
-        width:420px;
+    .polaroid-wrapper{
+
         top:-70px;
-        left:-100px;
+        left:-90px;
+
+    }
+
+    .polaroid{
+
+        width:340px;
+
     }
 
     .pencil{
@@ -93,8 +100,46 @@
         width:34%;
     }
 
-}
+    #about{
 
+        padding:150px 100px;
+
+    }
+
+    .about-container{
+
+        gap:50px;
+
+    }
+
+    .about-left{
+
+        max-width:400;
+
+    }
+
+    .about-left p{
+
+        font-size:17px;
+
+    }
+
+    .about-right h2{
+
+        font-size:32px;
+        margin-bottom:20px;
+
+    }
+
+    .riya-signature{
+
+        font-size:100px;
+        line-height:0;
+        transform:translate(-20px, -150px);
+
+    }
+
+}
 
 
 /* ===========================================
@@ -129,19 +174,17 @@
 
 }
 
+.polaroid-wrapper{
+
+    top:-40px;
+
+    left:-80px;
+
+}
+
 .polaroid{
 
     width:300px;
-
-    top:-50px;
-
-    left:-85px;
-
-    transform:rotate(-10deg);
-
-    filter:
-        drop-shadow(0 15px 25px rgba(0,0,0,.10))
-        drop-shadow(0 30px 45px rgba(0,0,0,.15));
 
 }
 
@@ -273,6 +316,68 @@
         transition:.3s;
 
     }
+    #about{
+
+    padding:100p 100px;
+
+    }
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        gap:70px;
+
+        text-align:center;
+
+    }
+
+    .about-left{
+
+        order:2;
+
+        max-width:100%;
+
+        transform:none;
+
+    }
+
+    .about-left p{
+
+        max-width:100%;
+
+        font-size:16px;
+
+        margin-bottom:24px;
+
+    }
+
+    .about-right{
+
+        order:1;
+
+        align-items:center;
+
+        transform:none;
+
+    }
+
+    .about-right h2{
+
+        font-size:34px;
+
+        margin-bottom:-15px;
+
+    }
+
+    .riya-signature{
+
+        font-size:80x;
+
+        transform:translateY(-100px);
+
+    }
+
 
 }
 
@@ -321,108 +426,108 @@
 
     }
 
-/* ---------- SERVICES ---------- */
+    /* ---------- SERVICES ---------- */
 
-#services{
+    #services{
 
-    margin-top: -140px;
-    min-height: 50vh;
+        margin-top: -140px;
+        min-height: 50vh;
 
-}
+    }
 
 
 
-.service-card{
+    .service-card{
 
-    position:absolute;
+        position:absolute;
 
-    width:160px;
+        width:160px;
 
-}
+    }
 
-/* Left */
+    /* Left */
 
-.card-left{
+    .card-left{
 
-    top:0%;
+        top:0%;
 
-    left:0;
+        left:0;
 
-    bottom:0;
+        bottom:0;
 
-    transform:rotate(-8deg);
+        transform:rotate(-8deg);
 
-}
+    }
 
-/* Center */
+    /* Center */
 
-.card-center{
+    .card-center{
 
-    left:50%;
+        left:50%;
 
-    top:-50%;
+        top:-50%;
 
-    transform:translateX(-50%) rotate(1deg);
+        transform:translateX(-50%) rotate(1deg);
 
-    z-index:3;
+        z-index:3;
 
-}
+    }
 
-/* Right */
+    /* Right */
 
-.card-right{
+    .card-right{
 
-    right:-0%;
+        right:-0%;
 
-    bottom:0;
+        bottom:0;
 
-    transform:rotate(8deg);
+        transform:rotate(8deg);
 
-}
+    }
 
-.mobile-resume{
+    .mobile-resume{
 
-    display:flex;
+        display:flex;
 
-    align-items:center;
+        align-items:center;
 
-    justify-content:center;
+        justify-content:center;
 
-    position:fixed;
+        position:fixed;
 
-    left:50%;
+        left:50%;
 
-    bottom:24px;
+        bottom:24px;
 
-    width:120px;
+        width:120px;
 
-    height:44px;
+        height:44px;
 
-    background:#1f1f1f;
+        background:#1f1f1f;
 
-    color:#ffffff;
+        color:#ffffff;
 
-    text-decoration:none;
+        text-decoration:none;
 
-    font-size:14px;
+        font-size:14px;
 
-    font-weight:500;
+        font-weight:500;
 
-    border-radius:999px;
+        border-radius:999px;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
+        box-shadow:0 10px 25px rgba(0,0,0,.18);
 
-    z-index:9999;
+        z-index:9999;
 
-    opacity:0;
+        opacity:0;
 
-    transform:translate(-50%, 30px);
+        transform:translate(-50%, 30px);
 
-    transition:
-        opacity .5s ease,
-        transform .5s ease;
+        transition:
+            opacity .5s ease,
+            transform .5s ease;
 
-}
+    }
 
     .polaroid-wrapper{
 
@@ -437,12 +542,45 @@
 
     }
 
-}
 
-.mobile-resume.show{
+    .mobile-resume.show{
 
     opacity:1;
 
     transform:translate(-50%, 0);
+
+    }
+
+    #about{
+
+        padding:200px 100px;
+
+    }
+
+    .about-left p{
+
+        font-size:16px;
+
+        line-height:1.7;
+
+    }
+
+    .about-right{
+
+        align-items:center;
+
+    }
+
+    .about-right h2{
+
+        font-size:20px;
+
+    }
+
+    .riya-signature{
+
+        font-size:80px;
+
+    }
 
 }
