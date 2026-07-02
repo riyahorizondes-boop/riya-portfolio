@@ -378,6 +378,8 @@
 
     }
 
+    
+
 
 }
 
@@ -430,7 +432,7 @@
 
     #services{
 
-        margin-top: -140px;
+        margin-top: -100px;
         min-height: 50vh;
 
     }
@@ -554,8 +556,18 @@
     #about{
 
         padding:200px 100px;
+        padding-bottom:120px;
+
 
     }
+
+    .about-container{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:16px;      /* was probably 100px+ */
+    }
+
 
     .about-left p{
 
@@ -583,4 +595,104 @@
 
     }
 
+    .sticky-project{
+        position:static;
+    }
+
+    .featured-project{
+
+        position:relative;
+        width:92%;
+        height:auto;
+        margin:auto;
+
+        background:none;
+        overflow:hidden;
+        border-radius:0.2px;
+
+    }
+
+    .project-window{
+        position:relative;      /* IMPORTANT */
+        overflow:hidden;
+        border-radius:.2px;
+    }
+
+    #work{
+
+        height:auto;
+        padding-bottom:50px;
+
+    }
+
+    .work-bg-text{
+        font-size:16rem;
+        top:-20px;
+    }
+
+    .project-bg{
+        display:none;
+    }
+
+    .project-window{
+
+        position:relative;      /* IMPORTANT */
+        left:0;
+        top:0;
+        transform:none;
+
+        width:100%;
+        height:280px;
+
+        overflow:hidden;
+        border-radius:10px;
+
+    }
+
+    .project-scroll{
+
+        width:100%;
+        height:auto;
+
+        display:block;
+
+        transform:none !important;
+
+    }
+
+    .work-heading{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        gap:80px;
+        margin-bottom:40px;
+        text-align:center;
+    }
+
+    .work-title{
+        position:relative;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .work-title span{
+        position:absolute;
+        top:-12px;
+        left:50%;
+        transform:translateX(-50%);
+        font-size:1.2rem;
+    }
+
+    .work-title h2{
+        font-size:6rem;
+        line-height:1;
+    }
+
+    .work-category{
+        margin:20px;
+        font-size:1.4rem;
+    }
 }

@@ -61,3 +61,50 @@ window.addEventListener("scroll", () => {
     }
 
 });
+
+
+
+const work = document.querySelector("#work");
+const projectWindow = document.querySelector(".project-window");
+const projectImage = document.querySelector(".project-scroll");
+
+
+window.addEventListener("scroll", () => {
+
+    const start = work.offsetTop;
+
+    const end =
+        work.offsetTop +
+        work.offsetHeight -
+        window.innerHeight;
+
+    const distance = end - start;
+
+    // Wait for 15% of the section before scrolling starts
+    const delay = distance * 0.20;
+
+    let progress =
+        (window.scrollY - start - delay) /
+        (distance - delay);
+
+    progress = Math.max(0, Math.min(progress, 1));
+
+    
+
+    const move =
+        projectImage.offsetHeight -
+        projectWindow.offsetHeight;
+
+    projectImage.style.transform =
+        `translateY(-${move * progress}px)`;
+
+});
+
+const isMobile = window.matchMedia("(max-width: 480px)");
+
+window.addEventListener("scroll", () => {
+
+    if (isMobile.matches) return;
+
+    // scrolling code...
+});
