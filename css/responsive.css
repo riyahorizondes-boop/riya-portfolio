@@ -649,6 +649,16 @@
 
     }
 
+        .project-overlay{
+            height: 75px;
+
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+}
+
     .project-scroll{
 
         width:100%;
@@ -659,6 +669,36 @@
         transform:none !important;
 
     }
+
+.project-tags{
+    position:absolute;
+
+    left:50%;
+    transform:translateX(-50%);
+
+    bottom:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+
+    width:max-content;
+
+    z-index:5;
+}
+
+.project-tags span{
+
+    padding:8px 14px;
+
+    font-size:.75rem;
+
+    border-radius:999px;
+
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+}
 
     .work-heading{
         width:100%;

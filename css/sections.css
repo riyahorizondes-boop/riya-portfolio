@@ -558,27 +558,53 @@
 .project-overlay{
 
     position:absolute;
+
     left:0;
+    right:0;
     bottom:0;
 
-    width:100%;
-    height:90px;
+    height:140px;
 
-    background:linear-gradient(
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    background:rgba(255,255,255,.04);
+
+    mask-image:linear-gradient(
         to top,
-        rgba(0,0,0,.45) 0%,
-        rgba(0,0,0,.18) 45%,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,.95) 20%,
+        rgba(0,0,0,.75) 45%,
+        rgba(0,0,0,.35) 70%,
+        rgba(0,0,0,0) 100%
+    );
+
+    -webkit-mask-image:linear-gradient(
+        to top,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,.95) 20%,
+        rgba(0,0,0,.75) 45%,
+        rgba(0,0,0,.35) 70%,
         rgba(0,0,0,0) 100%
     );
 
     pointer-events:none;
+
+    z-index:4;
 }
 
 .project-tags{
+
     position:absolute;
-    left:22px;
-    bottom:18px;
+
+    left:32px;
+    bottom:24px;
+
+    display:flex;
+    gap:10px;
+
     z-index:5;
+
 }
 
 .project-tags span{
